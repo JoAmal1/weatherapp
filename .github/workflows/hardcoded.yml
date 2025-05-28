@@ -3,7 +3,7 @@ name: Weather API Insecure Workflow
 on:
   push:
     paths:
-      - .github/workflows/hardcoded-api.yml
+      - .github/workflows/hardcoded.yml
 
 jobs:
   run-weather-api-insecure:
