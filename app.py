@@ -9,7 +9,7 @@ def home():
     return "Welcome to the Weather API Flask App!"
 
 @app.route("/weather/<city>")
-def get_weather(city):
+def get_weather(city): 
     api_key = os.environ.get("WEATHER_API_KEY")
     if not api_key:
         return jsonify({"error": "API key not found in environment variable"}), 500
